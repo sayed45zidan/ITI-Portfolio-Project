@@ -724,3 +724,13 @@ body.dark-mode .about-info {
     color: #f1f1f1; /* لون النص مختلف في الوضع الليلي */
 }
 
+/* الموبايلات */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav ul {
+    display: block;
+  }
+}
