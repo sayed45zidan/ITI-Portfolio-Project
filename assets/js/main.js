@@ -152,3 +152,20 @@ toggleBtn.addEventListener("click", () => {
     toggleBtn.classList.replace("uil-sun", "uil-moon");
   }
 });
+
+
+const menuBtn = document.querySelector(".nav-menu-btn");
+const navMenu = document.querySelector(".nav-menu");
+const navLinks = document.querySelectorAll(".nav-menu a");
+
+// فتح/قفل القائمة
+menuBtn.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+});
+
+// إغلاق القائمة بعد اختيار لينك
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    navMenu.classList.remove("active");
+  });
+});
